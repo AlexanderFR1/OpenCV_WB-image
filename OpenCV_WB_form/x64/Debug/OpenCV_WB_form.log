@@ -1,0 +1,11 @@
+﻿Build started 07.10.2017 21:49:43.
+     1>Project "D:\ПАПКИ\ВУЗ методички\3 курс\ОИ\ЧБ изображение\OpenCV_WB_form\OpenCV_WB_form\OpenCV_WB_form.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ПАПКИ\ВУЗ методички\3 курс\ОИ\ЧБ изображение\OpenCV_WB_form\x64\Debug\OpenCV_WB_form.exe" /INCREMENTAL /NOLOGO opencv_world310d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:x64\Debug\OpenCV_WB_form.MainForm.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\ПАПКИ\ВУЗ методички\3 курс\ОИ\ЧБ изображение\OpenCV_WB_form\x64\Debug\OpenCV_WB_form.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"Main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 x64\Debug\MainForm.obj
+         "x64\Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         OpenCV_WB_form.vcxproj -> D:\ПАПКИ\ВУЗ методички\3 курс\ОИ\ЧБ изображение\OpenCV_WB_form\x64\Debug\OpenCV_WB_form.exe
+     1>Done Building Project "D:\ПАПКИ\ВУЗ методички\3 курс\ОИ\ЧБ изображение\OpenCV_WB_form\OpenCV_WB_form\OpenCV_WB_form.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.37
