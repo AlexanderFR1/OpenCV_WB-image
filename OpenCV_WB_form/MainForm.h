@@ -137,11 +137,8 @@ namespace OpenCV_WB_form {
 				 dgOpen->Filter = "Image ( *.bmp;	*.jpg)| *.bmp; *.jpg|All files (*.*)|*.*||";
 				 if(dgOpen->ShowDialog() == System::Windows::Forms::DialogResult::Cancel)
 					 return;
-				 Bitmap^ bmpSrc = gcnew Bitmap(dgOpen->FileName);
-				// System::string^ er=dgOpen->FileName;
-				// ptbSource->Image = bmpSrc;
-				// ptbSource->Refresh();
-				// Dum=dgOpen->FileName;
+
+				 Bitmap^ bmpSrc = gcnew Bitmap(dgOpen->FileName);				
 				 src = imread(ConvertString2Char(dgOpen->FileName));
 				 imshow	("Source image",src);
 			 }
@@ -153,24 +150,10 @@ namespace OpenCV_WB_form {
 private: System::Void btnProcess_Click(System::Object^  sender, System::EventArgs^  e) 
 		 {
 			 IplImage* image = 0; 
-			// имя картинки задаётся первым параметром 
-			//std::string filename("D:\\Программирование\\Обработка изображений\\ConsoleApplication1\\11.jpg"); 
-			// получаем картинку 
-			//image = cvLoadImage(filename.c_str(), 1); 
-			// клонируем картинку 
-			//src = cvCloneImage(image); 
-
-			//printf("[i] image: %s\n", filename); 
-			//assert(src != 0); 
-
-			// окно для отображения картинки 
-			//cvNamedWindow("original", CV_WINDOW_KEEPRATIO); 
 			cvNamedWindow("changed", CV_WINDOW_AUTOSIZE); 
 			Mat source; 
 			source = src; 
 			Mat inv_source = Mat::zeros(source.size(), CV_8UC3); 
-			// показываем картинку 
-			//cvShowImage("original", image); 
 			int min; 
 			for (int i = 0; i < source.rows; ++i) 
 			for (int j = 0; j < source.cols; ++j) 
@@ -185,13 +168,7 @@ private: System::Void btnProcess_Click(System::Object^  sender, System::EventArg
 			inv_source.at<Vec3b>(i, j) = Vec3b(min, min, min); 
 			} 
 			imshow("changed", inv_source); 
-			cvWaitKey(0); 
-			// освобождаем ресурсы 
-			//cvReleaseImage(&image); 
-			//cvReleaseImage(&src); 
-			// удаляем окно 
-			//cvDestroyWindow("original"); 
-	
+			cvWaitKey(0); 	
 		 }
 };
 }
